@@ -1,0 +1,271 @@
+/*GENERAL SETTINGS*/
+@font-face {
+  font-family: "ttnorms-bold";
+  src: url("../fonts/TTNorms-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ttnorms-medium";
+  src: url("../fonts/TTNorms-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ttnorms";
+  src: url("../fonts/TTNorms-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*INTRO*/
+.intro {
+  background: $softGradient;
+  height: 100vh;
+  .logo {
+    background: url("../images/logo-on-dark.svg") no-repeat;
+    width: 161px;
+    height: 50px;
+  }
+  .symbol-container {
+    height: calc(100vh - 66px);
+    .intro-bg {
+      background: url("../images/frame-2.svg");
+      width: 689px;
+      height: 100vh;
+      &:after {
+        content: "";
+        background: url("../images/symbol-long-leg.svg") no-repeat;
+        position: absolute;
+        width: 430px;
+        height: 687px;
+        background-size: cover;
+      }
+    }
+  }
+}
+/*SECTION*/
+/*services*/
+.expirience-services {
+  background: $superSoftGradient;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-bottom: 61px;
+  .srv-content {
+    padding-bottom: 47px;
+    .brd-link {
+      position: relative;
+      .breadcrumbs {
+        @include breadcrumbs;
+      }
+      .brd-dark {
+        color: $bombay;
+      }
+      .right-arrow-dark:after {
+        content: "";
+        position: absolute;
+        background: url("../images/sprite/sprite.svg#right-arrow-dark") no-repeat;
+        width: 9px;
+        height: 11px;
+        left: 90px;
+        top: calc(50% - 5.5px);
+        background-size: cover;
+      }
+    }
+    .block-heading {
+      @include block-heading;
+      margin-bottom: 68px;
+    }
+    .srv-block {
+      margin-bottom: 16px;
+    }
+    .service-info {
+      text-decoration: none;
+      cursor: pointer;
+      color: $dodgerBlue;
+      font-size: 24px;
+      line-height: 28.32px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      margin-bottom: 15px;
+      &:hover {
+        color: $razzmatazz;
+      }
+    }
+    .info-block {
+      color: $white;
+      text-align: justify;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.05px;
+    }
+    .ico-holder {
+      position: relative;
+      width: 92px;
+      height: 92px;
+      background: $white;
+      border-radius: 24px;
+      margin-bottom: 20px;
+      .srv-ico:before {
+        content: "";
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: calc(50% - 32px);
+        left: calc(50% - 32px);
+        background-size: cover;
+      }
+      .ico-shopping:before {
+        background: url("../images/sprite/sprite.svg#ico-shopping") no-repeat;
+      }
+      .ico-bag:before {
+        background: url("../images/sprite/sprite.svg#ico-bag") no-repeat;
+      }
+      .ico-structure:before {
+        background: url("../images/sprite/sprite.svg#ico-structure") no-repeat;
+      }
+      .ico-structure-inner:before {
+        content: "";
+        position: absolute;
+        background: url("../images/sprite/sprite.svg#ico-structure-inner") no-repeat;
+        width: 21.5px;
+        height: 21.5px;
+        top: calc(50% - 10.75px);
+        left: calc(50% - 10.75px);
+      }
+      .ico-hand-together:before {
+        background: url("../images/sprite/sprite.svg#ico-hand-together") no-repeat;
+      }
+      .ico-shield:before {
+        background: url("../images/sprite/sprite.svg#ico-shield") no-repeat;
+      }
+      .ico-lawyer:before {
+        background: url("../images/sprite/sprite.svg#ico-lawyer") no-repeat;
+        width: 48px;
+        height: 48px;
+        top: calc(50% - 24px);
+        left: calc(50% - 24px);
+      }
+    }
+  }
+}
+/*end of services*/
+
+/*team*/
+.team {
+  margin-bottom: 77px;
+  .team-content {
+    background: $whisper;
+    border-radius: 12px;
+    .carousel-indicators {
+      bottom: -52px;
+      button {
+        width: 16px;
+        height: 16px;
+        background: $dodgerBlue;
+        opacity: 20%;
+        border: none;
+        border-radius: 50%;
+        margin-right: 11px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .active {
+        opacity: 100%;
+      }
+    }
+    .carousel-inner {
+      img {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+      .team-catchphrase {
+        padding-top: 36px;
+        .brd-link {
+          position: relative;
+          .breadcrumbs {
+            @include breadcrumbs;
+          }
+          .brd-light {
+            color: $dodgerBlue;
+          }
+          .right-arrow-light:after {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#right-arrow-light") no-repeat;
+            width: 9px;
+            height: 11px;
+            left: 85px;
+            top: calc(50% - 5.5px);
+            background-size: cover;
+          }
+        }
+        .block-heading {
+          @include block-heading;
+          margin-bottom: 21px;
+        }
+        .name {
+          font-size: 18px;
+          line-height: 21.24px;
+          color: $bombay;
+          font-weight: 500;
+          margin-bottom: 6px;
+          word-spacing: 1px;
+        }
+        .role {
+          font-style: 16px;
+          line-height: 22px;
+          color: $bombay;
+        }
+      }
+    }
+  }
+}
+/*end of team*/
+
+/*clients logo*/
+.logo-blocks {
+  .logo-keeper {
+    height: 120px;
+  }
+  .hillel {
+    background: $chathamsBlue;
+  }
+  .wannabiz {
+    background: $elephant;
+  }
+  .targerine {
+    background: $jaffa;
+  }
+  .dlook {
+    background: $amethyst;
+  }
+  .orangear {
+    background: $neonCarrot;
+  }
+  .adtelligent {
+    background: $iron;
+  }
+  .clickky {
+    background: $cardinal;
+  }
+  .ecoleasing {
+    background: $whiteIce;
+  }
+  .infratek {
+    background: $gallery;
+  }
+  .citypark {
+    background: $ebonyClay;
+  }
+  .artprint {
+    background: $biscay;
+  }
+  .ultcard {
+    background: $black;
+  }
+}
+
+/*end of clients logo*/
