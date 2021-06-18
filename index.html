@@ -12,8 +12,8 @@
 <body>
   <div class="intro">
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-0 px-lg-1">
           <a class="navbar-brand logo" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +21,20 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="#">про нас</a>
+              <a class="nav-link" href="#">послуги</a>
+              <a class="nav-link" href="#">команда</a>
+              <a class="nav-link" href="#">публікації</a>
+              <a class="nav-link" href="#">контакти</a>
             </div>
           </div>
         </div>
       </nav>
       <div class="row symbol-container justify-content-center align-item-center">
         <div class="col col-6">
-          <div class="intro-bg"></div>
+          <div class="intro-bg d-flex align-items-center">
+            <span class="slogan text-center">системний адміністратор правових рішень</span>
+          </div>
         </div>
       </div>
     </div>
@@ -40,19 +43,43 @@
   <main>
     <section>
       <div class="expirience-services">
+        <div class="container subnav-holder">
+          <div class="row">
+            <div class="col col-lg-5">
+              <ul class="subnav">
+                <li><a class="active" href="#">Послідовні</a></li>
+                <li><a class="benefits" href="#">Клієнтоорієнтовані</a></li>
+                <li><a class="benefits" href="#">Інноваційні</a></li>
+                <li><a class="benefits" href="#">Бізнес-орієнтовані
+                    юристи</a></li>
+              </ul>
+            </div>
+
+            <div class="col col-lg-6">
+              <div class="subnav-content d-flex flex-column justify-content-center">
+                <strong class="title d-block">Перевертаємо уявлення про юридичні послуги</strong>
+                <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                  досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                  морського права в Україні.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container srv-content">
           <div class="row">
             <div class="brd-link">
-              <a class="breadcrumbs brd-dark" href="#">ПОСЛУГИ</a>
-              <span class="right-arrow-dark"></span>
+              <a class="breadcrumbs brd-dark" href="#">ПОСЛУГИ<span class="right-arrow-dark"></span><span
+                  class="right-arrow-hover-red"></span></a>
             </div>
+
           </div>
           <div class="row">
-            <h3 class="block-heading">Що ми вміємо робити краще за інших?</h3>
+            <h1 class="block-heading">Що ми вміємо робити краще за інших?</h1>
           </div>
 
           <div class="row">
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-shopping srv-ico"></span>
@@ -67,7 +94,7 @@
                 вже й багато, щоб наймати інхауз-юриста.</p>
             </div>
 
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-bag srv-ico"></span>
@@ -82,7 +109,7 @@
 
             </div>
 
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-structure srv-ico"></span>
@@ -96,7 +123,7 @@
                 команду, які впишуться в повсякденне життя вашої компанії.</p>
             </div>
 
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-hand-together srv-ico"></span>
@@ -112,7 +139,7 @@
                 замість очікування статусу update.</p>
             </div>
 
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-shield srv-ico"></span>
@@ -128,7 +155,7 @@
                 Partners замість корпоративного юриста.</p>
             </div>
 
-            <div class="col-4 srv-block">
+            <div class="col-xs-12 col-sm-6 col-lg-4 srv-block">
               <div class="heading-keeper">
                 <div class="ico-holder">
                   <span class="ico-lawyer srv-ico"></span>
@@ -157,69 +184,87 @@
             <div class="carousel-inner">
 
               <div class="carousel-item active">
-                <div class="row justify-content-between">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-12 col-lg-4 photo">
                     <div class="img-holder">
                       <img src="images/team-photo/photo-01AA.jpg" class="d-block" alt="Alex Alexandrovskii">
                     </div>
+                    <div class="personal-data-sm">
+                      <span class="name d-block">Олександр Олександровський</span>
+                      <span class="role d-block">Керуючий партнер</span>
+                    </div>
                   </div>
-                  <div class="col-7">
+                  <div class="col-12 col-lg-6 col-xl-7">
                     <div class="team-catchphrase">
                       <div class="brd-link">
-                        <a class="breadcrumbs brd-light" href="#">КОМАНДА</a>
-                        <span class="right-arrow-light"></span>
+                        <a class="breadcrumbs" href="#">КОМАНДА<span class="right-arrow-light"></span><span
+                            class="right-arrow-hover-red"></span></a>
                       </div>
                       <h3 class="block-heading">Ми звикли брати на себе відповідальність та завжди
                         гарантуємо
                         чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
-                      <span class="name d-block">Олександр Олександровський</span>
-                      <span class="role d-block">Керуючий партнер</span>
+                      <div class="personal-data-lg">
+                        <span class="name d-block">Олександр Олександровський</span>
+                        <span class="role d-block">Керуючий партнер</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="row justify-content-between">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-12 col-lg-4 photo">
                     <div class="img-holder">
                       <img src="images/team-photo/photo-01AA.jpg" class="d-block" alt="Alex Alexandrovskii">
                     </div>
+                    <div class="personal-data-sm">
+                      <span class="name d-block">Олександр Олександровський</span>
+                      <span class="role d-block">Керуючий партнер</span>
+                    </div>
                   </div>
-                  <div class="col-7">
+                  <div class="col-12 col-lg-6 col-xl-7">
                     <div class="team-catchphrase">
                       <div class="brd-link">
-                        <a class="breadcrumbs brd-light" href="#">КОМАНДА</a>
-                        <span class="right-arrow-light"></span>
+                        <a class="breadcrumbs" href="#">КОМАНДА<span class="right-arrow-light"></span><span
+                            class="right-arrow-hover-red"></span></a>
                       </div>
                       <h3 class="block-heading">Ми звикли брати на себе відповідальність та завжди
                         гарантуємо
                         чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
-                      <span class="name d-block">Олександр Олександровський</span>
-                      <span class="role d-block">Керуючий партнер</span>
+                      <div class="personal-data-lg">
+                        <span class="name d-block">Олександр Олександровський</span>
+                        <span class="role d-block">Керуючий партнер</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="row justify-content-between">
-                  <div class="col-4">
+                <div class="row">
+                  <div class="col-12 col-lg-4 photo">
                     <div class="img-holder">
                       <img src="images/team-photo/photo-01AA.jpg" class="d-block" alt="Alex Alexandrovskii">
                     </div>
+                    <div class="personal-data-sm">
+                      <span class="name d-block">Олександр Олександровський</span>
+                      <span class="role d-block">Керуючий партнер</span>
+                    </div>
                   </div>
-                  <div class="col-7">
+                  <div class="col-12 col-lg-6 col-xl-7">
                     <div class="team-catchphrase">
                       <div class="brd-link">
-                        <a class="breadcrumbs brd-light" href="#">КОМАНДА</a>
-                        <span class="right-arrow-light"></span>
+                        <a class="breadcrumbs" href="#">КОМАНДА<span class="right-arrow-light"></span><span
+                            class="right-arrow-hover-red"></span></a>
                       </div>
                       <h3 class="block-heading">Ми звикли брати на себе відповідальність та завжди
                         гарантуємо
                         чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
-                      <span class="name d-block">Олександр Олександровський</span>
-                      <span class="role d-block">Керуючий партнер</span>
+                      <div class="personal-data-lg">
+                        <span class="name d-block">Олександр Олександровський</span>
+                        <span class="role d-block">Керуючий партнер</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -229,67 +274,230 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div class="clients">
 
-        <!-- space for heading -->
+        <div class="container clients-case-holder">
+          <div class="row">
+            <div class="col-12 col-md-4 p-0 clients-case">
+              <div class="cases-content-holder cases">
+                <h3 class="cases-heading">УСПІШНІ КЕЙСИ</h3>
+              </div>
 
-        <div class="row logo-blocks">
-          <div class="col-3 logo-keeper hillel d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/hillel-school-logo.png" alt="HillelSchool" class="d-block">
+              <div class="cases-content-holder hillel-prj d-flex align-items-end">
+                <div>
+                  <span class="d-block company-case">Супровід проекту з купівлі-продажу сільськогосподарської
+                    продукції</span>
+                  <span class="company-name">Hillel IT School</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex align-items-end clients-case wannabiz-prj">
+              <div class="cases-content-holder">
+                <span class="d-block company-case">Підготовка комплексного юридичного висновку для європейського
+                  банку</span>
+                <span class="company-name">WannaBiz</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex align-items-end clients-case tapgerine-prj">
+              <div class="cases-content-holder">
+                <span class="d-block company-case">Супровід проекту з купівлі-продажу сільськогосподарської
+                  продукції</span>
+                <span class="company-name">tapgerine</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3 d-flex align-items-end clients-case dlook-prj">
+              <div class="cases-content-holder">
+                <span class="d-block company-case">Представництво інтересів великого зернотрейдера в податковому
+                  спорі</span>
+                <span class="company-name">3D LOOK</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex align-items-end clients-case adtelligent-prj">
+              <div class="cases-content-holder">
+                <span class="d-block company-case">Оскарження податкових повідомлень-рішень ДФС</span>
+                <span class="d-block company-name">adtelligent</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-5 d-flex align-items-end clients-case clikky-prj">
+              <div class="cases-content-holder">
+                <span class="d-block company-case">Супровід проекту з кредитування агротрейдерів мальтійським
+                  банком</span>
+                <span class="company-name">Clikky</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row logo-heading">
+            <div class="col">
+              <span class="d-block">ВЖЕ ДОВІРЯЮТЬ НАМ</span>
+            </div>
           </div>
 
-          <div class="col-3 logo-keeper wannabiz d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/wanna-biz-logo.png" alt="WannaBiz" class="d-block">
-          </div>
+          <div class="row logo-blocks">
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper hillel d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/hillel-school-logo.png" alt="HillelSchool" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper targerine d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/tapgerine-logo.png" alt="Targerine" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper wannabiz d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/wanna-biz-logo.png" alt="WannaBiz" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper dlook d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/3dlook-logo.png" alt="3DLook" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper targerine d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/tapgerine-logo.png" alt="Targerine" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper orangear d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/orangear-logo.png" alt="Orangear" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper dlook d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/3dlook-logo.png" alt="3DLook" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper d-flex justify-content-center align-items-center adtelligent">
-            <img src="images/partners-logo/adtelligent-logo.png" alt="Adtelligent" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper orangear d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/orangear-logo.png" alt="Orangear" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper clickky d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/clickky-logo.png" alt="Clickky" class="d-block">
-          </div>
+            <div
+              class="col-6 col-md-4 col-lg-3 logo-keeper d-flex justify-content-center align-items-center adtelligent">
+              <img src="images/partners-logo/adtelligent-logo.png" alt="Adtelligent" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper ecoleasing d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/eco-leasing-logo.png" alt="EcoLeasing" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper clickky d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/clickky-logo.png" alt="Clickky" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper infratek d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/infra-tek-logo.png" alt="InfraTek" class="d-block">
-          </div>
+            <div
+              class="col-6 col-md-4 col-lg-3 logo-keeper ecoleasing d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/eco-leasing-logo.png" alt="EcoLeasing" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper citypark d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/city-park-logo.png" alt="CityPark" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper infratek d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/infra-tek-logo.png" alt="InfraTek" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper artprint d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/art-print-studio-logo.png" alt="ArtPrintStudio" class="d-block">
-          </div>
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper citypark d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/city-park-logo.png" alt="CityPark" class="d-block">
+            </div>
 
-          <div class="col-3 logo-keeper ultcard d-flex justify-content-center align-items-center">
-            <img src="images/partners-logo/ultimate-card-logo.png" alt="UltimateCard" class="d-block">
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper artprint d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/art-print-studio-logo.png" alt="ArtPrintStudio" class="d-block">
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 logo-keeper ultcard d-flex justify-content-center align-items-center">
+              <img src="images/partners-logo/ultimate-card-logo.png" alt="UltimateCard" class="d-block">
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- <div class="publication">
+        <div class="container">
+          <div class="brd-link">
+            <a class="breadcrumbs brd-light" href="#">ПУБЛІКАЦІЇ<span class="right-arrow-light"></span><span class="right-arrow-hover-red"></span></a>
+          </div>
+          <h3 class="block-heading">Нам є що розказати</h3>
 
+          <div class="row articles-block">
+            <div class="col-4">
+              <article>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Валютний контроль помер, хай живе валютний контроль!</a>
+                  <time datetime="2019-06-14">14 червня</time>
+                </div>
+                <p>Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного
+                  законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».</p>
+              </article>
+            </div>
+
+            <div class="col-4">
+              <article>
+                <div class="artc-img">
+                  <img src="images/articles-img/equity-associate.jpg" alt="EQUITY ASSOCIATE">
+                </div>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Equity associate</a>
+                  <time datetime="2019-04-22">22 квітня</time>
+                </div>
+                <p>На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки
+                  мені
+                  казали, що якщо буду…</p>
+              </article>
+            </div>
+
+            <div class="col-4">
+              <article>
+                <div class="artc-img">
+                  <img src="images/articles-img/sanctions-gdpr.jpg" alt="SANCTIONS GDPR">
+                </div>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Штраф для «Корпорації добра»: що буде з Google та іншими
+                    за
+                    порушення GDPR</a>
+                  <time datetime="2019-09-29">29 вересня</time>
+                </div>
+                <p>І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня
+                  Національна комісія із захисту даних.</p>
+              </article>
+            </div>
+
+            <div class="col-4">
+              <article>
+                <div class="artc-img">
+                  <img src="images/articles-img/millennials-will.jpg" alt="MILLENNIAL'S WILL">
+                </div>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Заповіт міленіала</a>
+                  <time datetime="2019-08-19">19 серпня</time>
+                </div>
+                <p>Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок
+                  українського покоління Х виглядає так: квартира у…</p>
+              </article>
+            </div>
+
+            <div class="col-4">
+              <article>
+                <div class="artc-img">
+                  <img src="images/articles-img/uk-language.jpg" alt="">
+                </div>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Закон про мови: як зробити свій сайт відповідним</a>
+                  <time datetime="2019-08-19">19 серпня</time>
+                </div>
+                <p>Наталія Кирик, керівник контент студії Wordfactory.ua По-перше, це красиво! Це аргумент номер один на
+                  користь україномовного сайту. По-друге, це ефективно. У…</p>
+              </article>
+            </div>
+
+            <div class="col-4">
+              <article>
+                <div class="artc-img">
+                  <img src="images/articles-img/compensation.jpg" alt="COMPENSATION">
+                </div>
+                <div class="article-heading">
+                  <a class="article-heading d-block" href="#">Компенсація витрат на навчання дитини в дитячому садку та
+                    школі</a>
+                  <time datetime="2018-02-05">05 лютого</time>
+                </div>
+                <p>Про що йде мова В червні цього року Верховна Рада внесла зміни до Податкового кодексу України.
+                  Відтепер
+                  батьки, які отримують офіційну…</p>
+              </article>
+            </div>
+          </div>
+
+
+        </div>
+      </div> -->
     </section>
   </main>
 
 
-
+  <footer></footer>
 
 
 

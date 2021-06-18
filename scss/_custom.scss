@@ -1,15 +1,28 @@
 @import "variables";
 
+/*typography*/
 $font-family-sans-serif: "ttnorms", sans-serif;
 
-$container-max-widths: (
-   sm: 540px,
-   md: 720px,
-   lg: 960px,
-   xl: 1140px,
-   xxl: 1320px,
-) !default;
+$font-size-base: 1.125rem;
+$line-height-base: 1.44;
 
+$font-size-sm: 1rem;
+$line-height-sm: 1.375;
 
+$font-size-lg: 1.3125rem;
+$line-height-lg: 1.428;
 
-$link-hover-color: none !default;
+$h1-font-size: 2.625rem;
+$h2-font-size: 2.625rem;
+
+$headings-margin-bottom: 20px;
+
+/*links*/
+$link-color: $dodgerBlue;
+
+/*navbar*/
+$navbar-light-toggler-icon-bg: url(../images/burger.svg);
+$btn-focus-width: 1px;
+$navbar-light-color: $white;
+$navbar-light-active-color: $razzmatazz;
+$navbar-light-hover-color: $razzmatazz;
