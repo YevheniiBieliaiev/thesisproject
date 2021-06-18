@@ -623,6 +623,7 @@
   }
 }
 .logo-blocks {
+  margin-bottom: 40px;
   .logo-keeper {
     height: 120px;
   }
@@ -819,4 +820,134 @@
 /*END OF MAIN*/
 
 /*FOOTER*/
+footer {
+  background: $whisper;
+  .container {
+    border-top: 4px solid $athensGray;
+    .row {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      @include media-breakpoint-down(md) {
+        padding-bottom: 138px;
+      }
+      @include media-breakpoint-down(lg) {
+        padding-top: 19px;
+      }
+      address {
+        margin-bottom: 22px;
+        .adr-details {
+          font-size: 16px;
+          line-height: 18.88px;
+          color: $rhino;
+          margin-right: 47px;
+          letter-spacing: 0.2px;
+          @include media-breakpoint-down(lg) {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+        .map {
+          font-size: 12px;
+          line-height: 14.16px;
+          letter-spacing: 1px;
+          word-spacing: 1.3px;
+          text-decoration: none;
+          font-weight: 700;
+          position: relative;
+          &:hover {
+            color: $razzmatazz;
+          }
+          .divider-point:before {
+            @include footer-divider-point;
+          }
+        }
+      }
+      .contact {
+        .footer-social-net {
+          position: relative;
+          width: 38px;
+          height: 38px;
+          margin-right: 20px;
+          @include media-breakpoint-down(lg) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          &:hover {
+            .fb-ico-red::before {
+              display: block;
+            }
+          }
+          .fb-ico-blue::before {
+            content: "";
+            position: absolute;
+            background: url("../images/sprite/sprite.svg#fb-ico-blue") no-repeat;
+            background-size: cover;
+            width: 38px;
+            height: 38px;
+            top: 0;
+            left: 0;
+          }
+          .fb-ico-red::before {
+            content: "";
+            position: absolute;
+            display: none;
+            background: url("../images/sprite/sprite.svg#fb-ico-red") no-repeat;
+            background-size: cover;
+            width: 38px;
+            height: 38px;
+            top: 0;
+            left: 0;
+          }
+        }
+        .footer-phone {
+          font-size: 16px;
+          line-height: 18.88px;
+          font-weight: 700;
+          letter-spacing: 0.4px;
+          text-decoration: none;
+          color: $mulledWine;
+          margin-right: 35px;
+          position: relative;
+          @include media-breakpoint-down(lg) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          &:hover {
+            color: $razzmatazz;
+          }
+          .divider-point:before {
+            @include footer-divider-point;
+            left: -10px;
+          }
+        }
+        .footer-email {
+          font-size: 16px;
+          line-height: 18.88px;
+          font-weight: 700;
+          letter-spacing: 0.2px;
+          text-decoration: none;
+          position: relative;
+          @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+          }
+          &:hover {
+            color: $razzmatazz;
+          }
+          .divider-point:before {
+            @include footer-divider-point;
+          }
+        }
+      }
+      .copyright {
+        font-size: 16px;
+        line-height: 18.88px;
+        word-spacing: 2.7px;
+        color: $bombay;
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 /*END OF FOOTER*/

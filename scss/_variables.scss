@@ -92,3 +92,17 @@ $redTextGradinet: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     color: $razzmatazz;
   }
 }
+/*FOOTER .divider-point*/
+@mixin footer-divider-point {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $bombay;
+  top: calc(50% - 3px);
+  left: -15px;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
