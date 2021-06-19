@@ -1,4 +1,12 @@
 @import "variables";
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+  xxl: 1320px,
+) !default;
 
 /*typography*/
 $font-family-sans-serif: "ttnorms", sans-serif;
@@ -26,3 +34,4 @@ $btn-focus-width: 1px;
 $navbar-light-color: $white;
 $navbar-light-active-color: $razzmatazz;
 $navbar-light-hover-color: $razzmatazz;
+
