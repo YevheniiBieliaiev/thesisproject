@@ -49,9 +49,12 @@ $redTextGradinet: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
 @mixin benefits {
   font-size: 42px;
   line-height: 49.57px;
-  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: 700;
   color: $bombay;
   text-decoration: none;
+  width: 100%;
+  cursor: pointer;
   &:hover {
     background: #ef8080;
     background: -webkit-linear-gradient(to right, #ef8080 0%, #f0145a 100%);
@@ -94,7 +97,20 @@ $redTextGradinet: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     color: $razzmatazz;
   }
 }
-/*FOOTER .divider-point*/
+/*INTRO + FOOTER .divider-point*/
+@mixin intro-divider-point {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $white;
+  top: calc(50% - 3px);
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
 @mixin footer-divider-point {
   content: "";
   position: absolute;
@@ -108,6 +124,20 @@ $redTextGradinet: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     display: none;
   }
 }
+
+@mixin publications-divider-point {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $whiteLilac;
+  top: calc(50% - 3px);
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
 /*btn-link - example: .more*/
 @mixin link-btn {
   z-index: 3;

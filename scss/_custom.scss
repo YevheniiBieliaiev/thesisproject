@@ -35,3 +35,16 @@ $navbar-light-color: $white;
 $navbar-light-active-color: $razzmatazz;
 $navbar-light-hover-color: $razzmatazz;
 
+$navbar-dark-toggler-icon-bg: url(../images/burger-drk.svg);
+$navbar-dark-color: $dodgerBlue;
+$navbar-dark-active-color: $razzmatazz;
+$navbar-dark-hover-color: $razzmatazz;
+
+/*btn*/
+$info: $athensGray !default;
+$btn-font-size: $font-size-base !default;
+$btn-font-weight: 400 !default;
+$btn-border-radius: 0.625rem !default;
+$btn-padding-y: 0.4375rem !default;
+$btn-padding-x: 1rem !default;
+$btn-border-width: 0rem !default;
