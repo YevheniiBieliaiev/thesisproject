@@ -1266,7 +1266,9 @@ footer {
         letter-spacing: 1px;
         border-radius: 8px;
         &:hover {
-          background: $whiteLilac;
+          &:not(.active) {
+            background: $whiteLilac;
+          }
         }
       }
       .active {
