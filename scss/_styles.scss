@@ -1864,16 +1864,19 @@ footer {
 /*services in details subpage*/
 .srv-details-wrapper {
   position: relative;
-  background: $superSoftGradient;
+  background: linear-gradient(200deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
   margin-bottom: 60px;
-  .top-img-bcg {
-    background: url("../images/services-bg.jpg") no-repeat;
-    height: 500px;
-    width: 100%;
-    background-position: 50% 50%;
-    background-size: cover;
+  .img-bg-holder {
+    .top-img-bcg {
+      background: url("../images/services-bg.jpg") no-repeat;
+      height: 500px;
+      width: 100%;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -2084,6 +2087,9 @@ footer {
       text-align: left;
       top: 60px;
     }
+    @include media-breakpoint-down(sm) {
+      top: 30px;
+    }
     .service-info {
       @include block-heading-up-lg;
       margin-bottom: 25px;
@@ -2180,8 +2186,11 @@ footer {
       padding-bottom: 23px;
       padding-top: 130px;
     }
-    @include media-breakpoint-down(sm) {
-      padding-top: 300px;
+    @media (max-width: 474px) {
+      padding-top: 200px;
+    }
+    @media (max-width: 390px) {
+      padding-top: 270px;
     }
     .details-holder {
       .details-heading {
