@@ -1803,7 +1803,7 @@ footer {
     }
     @include media-breakpoint-down(sm) {
       width: 148px;
-      height: 21px;
+      height: 24px;
     }
   }
   .navbar {
@@ -1861,4 +1861,364 @@ footer {
     border-top: none;
   }
 }
+/*services in details subpage*/
+.srv-details-wrapper {
+  position: relative;
+  background: $superSoftGradient;
+  border-radius: 0px 0px 12px 12px;
+  margin-bottom: 60px;
+  .top-img-bcg {
+    background: url("../images/services-bg.jpg") no-repeat;
+    height: 500px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    background: $whisperShadow;
+    bottom: -20px;
+    left: 40px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    background: $mischka;
+    bottom: -10px;
+    left: 20px;
+  }
+  .srv-details-nav {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+    .intro-contacts {
+      padding-top: 52px;
+      @include media-breakpoint-down(lg) {
+        padding-top: 22px;
+      }
+      .lg-links {
+        margin-right: 15px;
+        a {
+          color: $white;
+          text-decoration: none;
+          cursor: pointer;
+          width: 29px;
+          height: 24px;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 1px;
+          border-radius: 8px;
+          &:hover {
+            background: $razzmatazz;
+          }
+        }
+        .active {
+          background: $razzmatazz;
+        }
+      }
+      address {
+        position: relative;
+        color: $white;
+        font-size: 16px;
+        line-height: 18.88px;
+        margin-right: 27px;
+        margin-bottom: 0;
+        .divider-point:before {
+          @include publications-divider-point;
+          left: -12px;
+        }
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+      .intro-phone {
+        position: relative;
+        color: $white;
+        font-size: 16px;
+        line-height: 18.88px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 26px;
+        letter-spacing: 0.4px;
+        &:hover {
+          color: $razzmatazz;
+        }
+        .divider-point:before {
+          @include publications-divider-point;
+          left: -15px;
+        }
+        .divider-point:after {
+          @include publications-divider-point;
+          right: -15px;
+        }
+        @include media-breakpoint-down(lg) {
+          color: $white;
+          margin-right: 5px;
+        }
+      }
+      .intro-social-net {
+        display: none;
+        width: 24px;
+        height: 24px;
+        margin-right: 13px;
+        @include media-breakpoint-up(lg) {
+          position: relative;
+          display: block;
+        }
+        &:hover {
+          .fb-ico-red::before {
+            display: block;
+          }
+        }
+        .fb-ico-white::before {
+          content: "";
+          position: absolute;
+          background: url("../images/sprite/sprite.svg#fb-ico-white") no-repeat;
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          top: 0;
+          left: 0;
+        }
+        .fb-ico-red::before {
+          content: "";
+          position: absolute;
+          display: none;
+          background: url("../images/sprite/sprite.svg#fb-ico-red") no-repeat;
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .navbar {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      left: 0;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 38px;
+        position: static;
+      }
+      .logo {
+        background: url("../images/logo-subsection-lt.svg") no-repeat;
+        background-size: cover;
+        margin-left: 20px;
+        width: 413px;
+        height: 63px;
+        position: absolute;
+        top: 49px;
+        left: 0px;
+        @include media-breakpoint-down(xl) {
+          width: 275px;
+          height: 42px;
+        }
+        @include media-breakpoint-down(lg) {
+          position: static;
+          width: 208px;
+          height: 31px;
+          margin-left: 15px;
+        }
+        @include media-breakpoint-down(sm) {
+          width: 148px;
+          height: 24px;
+        }
+      }
+      .navbar-toggler {
+        padding: 0.15rem 0.75rem;
+      }
+      .navbar-nav {
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+        height: calc(100vh - 59px);
+        @include media-breakpoint-up(lg) {
+          height: auto;
+          background: none;
+        }
+        .nav-link {
+          font-size: 40px;
+          text-align: center;
+          border-bottom: 2px solid transparent;
+          padding: 8px 0 0 0;
+          margin-right: 15px;
+          color: $white;
+          &:last-child {
+            margin-right: 0;
+          }
+          @include media-breakpoint-up(lg) {
+            font-size: inherit;
+            &:hover {
+              border-bottom: 2px solid $white;
+            }
+          }
+        }
+        @include media-breakpoint-up(lg) {
+          .active {
+            border-bottom: 2px solid $white;
+          }
+        }
+      }
+    }
+  }
+
+  .intro-content {
+    text-align: center;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    @include media-breakpoint-down(lg) {
+      text-align: left;
+      top: 60px;
+    }
+    .service-info {
+      @include block-heading-up-lg;
+      margin-bottom: 25px;
+      @include media-breakpoint-down(lg) {
+        font-size: 32px;
+        line-height: 37.77px;
+      }
+    }
+    .info-block {
+      color: $white;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.05px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 40px;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 15px;
+        }
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 20px;
+        }
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-lg;
+        line-height: $line-height-lg;
+      }
+    }
+    .ico-holder {
+      position: relative;
+      width: 92px;
+      height: 92px;
+      border-radius: 24px;
+      background: $white;
+      border-radius: 18px;
+      margin: auto;
+      margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-top: 83px;
+        margin-left: 0;
+      }
+      .srv-ico:before {
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        top: calc(50% - 22px);
+        left: calc(50% - 22px);
+        background-size: cover;
+        @include media-breakpoint-up(lg) {
+          width: 64px;
+          height: 64px;
+          top: calc(50% - 32px);
+          left: calc(50% - 32px);
+        }
+      }
+      .ico-shopping:before {
+        background: url("../images/sprite/sprite.svg#ico-shopping") no-repeat;
+        @include media-breakpoint-down(lg) {
+          width: 44.52px;
+          height: 44.52px;
+          top: calc(50% - 22.26px);
+          left: calc(50% - 22.26px);
+        }
+      }
+    }
+  }
+
+  .consult-btn-holder {
+    .consultation {
+      color: $white;
+      width: 250px;
+      height: 50px;
+      font-size: 14px;
+      line-height: 16.52px;
+      letter-spacing: 0.3px;
+      background: $dodgerBlue;
+      text-decoration: none;
+      cursor: pointer;
+      background: $dodgerBlue;
+      border-radius: 12px;
+      box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+      &:hover {
+        background: $razzmatazz;
+        box-shadow: 0px 0px 20px rgba(240, 20, 90, 0.5);
+      }
+    }
+  }
+
+  .details-wrapper {
+    padding-top: 300px;
+    padding-bottom: 63px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 23px;
+      padding-top: 130px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: 300px;
+    }
+    .details-holder {
+      .details-heading {
+        border-top: 4px solid rgba(255, 255, 255, 0.5);
+        padding-top: 19px;
+        font-size: 24px;
+        line-height: 28.32px;
+        color: $white;
+        margin-bottom: 20px;
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+          line-height: 21.24px;
+          margin-bottom: 10px;
+        }
+      }
+      ul {
+        li {
+          list-style-type: none;
+          color: $white;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 16px;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: $razzmatazz;
+            border-radius: 50%;
+            top: 12px;
+            left: -13px;
+          }
+        }
+      }
+    }
+  }
+}
+/*end of services in details subpage*/
 /*END OF SERVICES PAGGE*/
